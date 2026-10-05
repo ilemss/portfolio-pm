@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Роман Арефьев | Product Manager — Портфолио</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .glass-card {
+      background: rgba(23, 23, 31, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .badge {
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.25);
+      color: #818cf8;
+    }
+  </style>
+</head>
+<body class="bg-[#0b0c10] text-[#e2e8f0] antialiased selection:bg-indigo-500 selection:text-white min-h-screen">
+
+  <!-- Навигация -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0c10]/80 border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#about" class="flex items-center gap-3 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition">
+          РА
+        </div>
+        <span class="font-semibold text-white tracking-tight">Роман Арефьев</span>
+        <span class="hidden sm:inline-block text-xs text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-full border border-indigo-500/20">Product Manager</span>
+      </a>
+
+      <nav class="flex items-center gap-6 text-sm">
+        <a href="#about" class="text-slate-400 hover:text-white transition">Обо мне</a>
+        <a href="#projects" class="text-slate-400 hover:text-white transition">Кейсы</a>
+        <a href="#skills" class="text-slate-400 hover:text-white transition">Навыки</a>
+        <a href="#contacts" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-md shadow-indigo-600/30">
+          Связаться
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Обо мне (id="about" для правильной прокрутки) -->
+  <section id="about" class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+    <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Открыт к предложениям: Junior Product Manager
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+          Управляю созданием продуктов от <span class="gradient-text">исследования болей</span> до запуска MVP.
+        </h1>
+        
+        <p class="text-lg text-slate-300 leading-relaxed mb-8">
+          2+ года практической продуктовой разработки в проектной лаборатории («Школа Икс» ДГТУ, профиль «Системная аналитика»). Умею исследовать аудиторию, декомпозировать сложные требования в понятные User Stories, координировать междисциплинарные команды и доводить продукты до релиза в сжатые сроки.
+        </p>
+
+        <!-- Кнопки контактов в Hero (Email — приоритетный способ связи) -->
+        <div class="flex flex-wrap gap-3.5 items-center">
+          <a href="mailto:aromane1@mail.ru" class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium flex items-center gap-2.5 transition shadow-lg shadow-indigo-600/25">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Email: aromane1@mail.ru
+          </a>
+          <a href="https://t.me/ilem9" target="_blank" class="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 flex items-center gap-2.5 transition">
+            <svg class="w-4 h-4 fill-current text-slate-300" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            Telegram: @ilem9
+          </a>
+          <a href="tel:+79897271747" class="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 flex items-center gap-2.5 transition">
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            +7 (989) 727-17-47
+          </a>
+        </div>
+      </div>
+
+      <!-- Карточка профиля (вместо пустых цифр — реальный бэкграунд) -->
+      <div class="w-full lg:w-96 glass-card rounded-2xl p-6 border-white/10">
+        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Профиль специалиста</h3>
+        <ul class="space-y-4 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="text-indigo-400 mt-0.5">🎓</span>
+            <div>
+              <div class="text-white font-medium">Системная аналитика</div>
+              <div class="text-xs text-slate-400">ДГТУ, Институт «Школа Икс» (2024–2028)</div>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-purple-400 mt-0.5">⚡</span>
+            <div>
+              <div class="text-white font-medium">Проектно-модульный опыт</div>
+              <div class="text-xs text-slate-400">6 завершенных продуктов от идеи до MVP (спринты по 2 месяца)</div>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-blue-400 mt-0.5">👥</span>
+            <div>
+              <div class="text-white font-medium">Междисциплинарный менеджмент</div>
+              <div class="text-xs text-slate-400">Синхронизация IT, робототехники, BIM и дизайна через техлидов</div>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-emerald-400 mt-0.5">📍</span>
+            <div>
+              <div class="text-white font-medium">Формат работы</div>
+              <div class="text-xs text-slate-400">Удаленно / Ростов-на-Дону, полная занятость</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция: Ключевые кейсы -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+    <div class="flex items-end justify-between mb-12">
+      <div>
+        <span class="text-xs font-bold text-indigo-400 tracking-wider uppercase">Опыт и артефакты</span>
+        <h2 class="text-3xl font-bold text-white mt-1">Реализованные кейсы</h2>
+      </div>
+    </div>
+
+    <div class="space-y-12">
+
+      <!-- КЕЙС 1: Василёчек -->
+      <div class="glass-card rounded-3xl p-8 transition hover:border-indigo-500/40">
+        <!-- Шапка кейса -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">🌿</span>
+            <div>
+              <h3 class="text-2xl font-bold text-white">Комплексная IoT-система умного дома «Василёчек»</h3>
+              <p class="text-sm text-indigo-300">ДГТУ «Школа Икс» • Product Manager • Спринт 2 месяца</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-white/10">
+            IoT & Hardware
+          </span>
+        </div>
+
+        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+          Сквозной аппаратно-программный комплекс домашней автоматизации, объединяющий веб-дашборд управления, автономного сервисного робота-уборщика и цифровую BIM-модель здания.
+        </p>
+
+        <!-- ЕДИНАЯ СТРУКТУРА: 4 блока -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-1.5">1. Проблема и аудитория</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              IT-специалисты на удаленке подвержены урбан-выгоранию из-за сенсорного шума, размытия границ «работа/дом» и бытовой рутины. Существующие системы умного дома требуют сложной ручной настройки.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-1.5">2. Продуктовое решение</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Адаптивная среда с автоматической подстройкой света и звука («Фокус» и «Отдых» по данным сомнологии), компьютерное зрение для распознавания лиц и гусеничный робот «Муравей» для автономной уборки.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-1.5">3. Моя роль и процессы</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Управлял проектом через еженедельные созвоны с техлидами 3 отделов (IT, RT, BIM — 16 человек). Вел общее хранилище требований и канбан-доски. Спроектировал макет физического стенда и собрал его при выбывании участника команды.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1.5">4. Итог и результат</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              За 2 месяца команды состыковали софт, микроконтроллеры ESP и робота без срыва сроков. Лично подготовил структуру презентации и защитил концепт перед экспертным жюри (максимум 20/20 за защиту).
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2 text-xs">
+          <span class="badge px-2.5 py-1 rounded-md">Координация 16 человек</span>
+          <span class="badge px-2.5 py-1 rounded-md">CJM & Сценарии</span>
+          <span class="badge px-2.5 py-1 rounded-md">IoT (ESP8266 / WebSockets)</span>
+          <span class="badge px-2.5 py-1 rounded-md">Управление рисками</span>
+          <span class="badge px-2.5 py-1 rounded-md">Питчинг</span>
+        </div>
+      </div>
+
+      <!-- КЕЙС 2: Сквозь барьеры -->
+      <div class="glass-card rounded-3xl p-8 transition hover:border-indigo-500/40">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">🎲</span>
+            <div>
+              <h3 class="text-2xl font-bold text-white">Веб-игра по финансовой грамотности «Сквозь барьеры»</h3>
+              <p class="text-sm text-indigo-300">ДГТУ «Школа Икс» • Product Manager • Спринт 2 месяца</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-white/10">
+            EdTech / Геймификация
+          </span>
+        </div>
+
+        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+          Многопользовательская пошаговая веб-игра, обучающая управлению капиталом в условиях риска и защищающая от финансовых мошенников.
+        </p>
+
+        <!-- ЕДИНАЯ СТРУКТУРА: 4 блока -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-1.5">1. Проблема и аудитория</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Выпускники детских домов не имеют навыков распоряжения деньгами. По статистике, до 30% становятся жертвами мошенничества при получении выплат на старте самостоятельной жизни.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-1.5">2. Продуктовое решение</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Стратегическая игра на 4 игроков на сетке 8x8 с механикой поворотных турникетов за игровую плату. Игровой процесс моделирует цену выбора, доход и риски без потери реальных денег.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-1.5">3. Моя роль и процессы</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Когда подростки 14–17 лет отказались от тестов, вовремя переориентировал продукт на выпускников (18–25 лет). Сформировал матрицу стейкхолдеров (НКО, фонды), составил спецификацию требований (F1–F11, NF14).
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1.5">4. Итог и результат</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Успешно перенесли концепт из физического деревянного макета в работающее веб-приложение на Flask-SocketIO (смартфон как пульт + общий экран), готовое к внедрению в центры адаптации.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2 text-xs">
+          <span class="badge px-2.5 py-1 rounded-md">CustDev сирот и НКО</span>
+          <span class="badge px-2.5 py-1 rounded-md">Смена сегмента ЦА</span>
+          <span class="badge px-2.5 py-1 rounded-md">User Flow</span>
+          <span class="badge px-2.5 py-1 rounded-md">WebSockets Real-time</span>
+        </div>
+      </div>
+
+      <!-- КЕЙС 3: Мониторинг воды -->
+      <div class="glass-card rounded-3xl p-8 transition hover:border-indigo-500/40">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">💧</span>
+            <div>
+              <h3 class="text-2xl font-bold text-white">Система мониторинга и очистки воды в ЖК</h3>
+              <p class="text-sm text-indigo-300">ДГТУ «Школа Икс» • Аналитик & PM • Спринт 2 месяца</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-white/10">
+            GovTech / Экология
+          </span>
+        </div>
+
+        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+          Организационный проект внедрения магистральных датчиков анализа химического состава воды и автоматизированной фильтрации на вводе в жилые комплексы.
+        </p>
+
+        <!-- ЕДИНАЯ СТРУКТУРА: 4 блока -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-1.5">1. Проблема и аудитория</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Низкое качество водопроводной воды в Ростове-на-Дону вынуждает жителей покупать бутилированную воду и бытовые фильтры, создавая пластиковые отходы и лишние траты.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-1.5">2. Продуктовое решение</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Установка умных датчиков на вводе в дом с автоматическим включением ступеней фильтрации только при отклонении показателей, что снижает износ фильтров и затраты УК.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-1.5">3. Моя роль и процессы</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Провел полевой опрос жителей города и составил ментальные карты районов. Проанализировал боли целевых групп (семьи с детьми, люди с аллергиями, владельцы животных).
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1.5">4. Итог и результат</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Рассчитал экономику решения: доказал, что для дома на 1350 жителей система экономит свыше 2 млн рублей в год по сравнению с покупкой бутилированной воды (2,2 млн ₽ vs 142 тыс. ₽).
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2 text-xs">
+          <span class="badge px-2.5 py-1 rounded-md">Полевой CustDev</span>
+          <span class="badge px-2.5 py-1 rounded-md">Ментальные карты</span>
+          <span class="badge px-2.5 py-1 rounded-md">Расчет окупаемости</span>
+          <span class="badge px-2.5 py-1 rounded-md">Экономика решения</span>
+        </div>
+      </div>
+
+      <!-- КЕЙС 4: AVB Invest -->
+      <div class="glass-card rounded-3xl p-8 transition hover:border-indigo-500/40">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">📈</span>
+            <div>
+              <h3 class="text-2xl font-bold text-white">Стажировка в AVB Invest Inc («TimeTrust»)</h3>
+              <p class="text-sm text-indigo-300">AVB Invest Inc • Junior PM / Delivery • 3 месяца</p>
+            </div>
+          </div>
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800 text-slate-300 border border-white/10">
+            Финтех / Инвестиции
+          </span>
+        </div>
+
+        <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+          Координация разработки промо-лендинга платформы негосударственного пенсионного обеспечения.
+        </p>
+
+        <!-- ЕДИНАЯ СТРУКТУРА: 4 блока -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-1.5">1. Проблема и аудитория</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Необходимость презентовать сложный финансовый инструмент пенсионных накоплений для частных вкладчиков через понятный конверсионный интерфейс.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-1.5">2. Продуктовое решение</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Структура лендинга с прозрачным калькулятором доходности и пошаговой формой отправки заявки, снимающая возражения пользователей.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-1.5">3. Моя роль и процессы</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Декомпозировал бизнес-требования на User Stories; проводил ревью макетов в Figma на соответствие функциональным ограничениям; вел спринты разработки в канбан-доске.
+            </p>
+          </div>
+
+          <div class="bg-black/30 rounded-xl p-4 border border-white/5">
+            <div class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-1.5">4. Итог и результат</div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              При внезапных изменениях дизайна за 2 недели до сдачи вовремя отсек вторичный функционал, защитив команду от перегрузки и выпустив MVP лендинга точно в срок.
+            </p>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-white/5 flex flex-wrap gap-2 text-xs">
+          <span class="badge px-2.5 py-1 rounded-md">Product Delivery</span>
+          <span class="badge px-2.5 py-1 rounded-md">User Stories</span>
+          <span class="badge px-2.5 py-1 rounded-md">Figma UI-Review</span>
+          <span class="badge px-2.5 py-1 rounded-md">Scope Management</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Секция: Навыки -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-white/5">
+    <div class="mb-12">
+      <span class="text-xs font-bold text-indigo-400 tracking-wider uppercase">Компетенции</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Стек и инструменты</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="glass-card rounded-2xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center font-bold mb-4">🎯</div>
+        <h3 class="font-bold text-white mb-2">Product Discovery</h3>
+        <ul class="text-sm text-slate-400 space-y-1.5">
+          <li>• CustDev & Интервью</li>
+          <li>• Сегментация ЦА & Боли</li>
+          <li>• Customer Journey Map (CJM)</li>
+          <li>• Value Proposition Canvas</li>
+          <li>• Формулировка гипотез</li>
+        </ul>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold mb-4">⚙️</div>
+        <h3 class="font-bold text-white mb-2">Product Delivery</h3>
+        <ul class="text-sm text-slate-400 space-y-1.5">
+          <li>• Системная аналитика</li>
+          <li>• PRD & Спецификации</li>
+          <li>• User Stories & Acceptance Criteria</li>
+          <li>• Приоритизация (RICE, MoSCoW)</li>
+          <li>• Управление рисками и скоупом</li>
+        </ul>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center font-bold mb-4">👥</div>
+        <h3 class="font-bold text-white mb-2">Лидерство & Процессы</h3>
+        <ul class="text-sm text-slate-400 space-y-1.5">
+          <li>• Координация до 16 человек</li>
+          <li>• Работа через техлидов</li>
+          <li>• Питчинг перед стейкхолдерами</li>
+          <li>• Agile, Scrum, Kanban</li>
+          <li>• Устранение блокеров команд</li>
+        </ul>
+      </div>
+
+      <div class="glass-card rounded-2xl p-6">
+        <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center font-bold mb-4">🛠️</div>
+        <h3 class="font-bold text-white mb-2">Инструменты</h3>
+        <ul class="text-sm text-slate-400 space-y-1.5">
+          <li>• Notion / Yonote</li>
+          <li>• Miro / Holst</li>
+          <li>• Figma (UI-ревью и макеты)</li>
+          <li>• ClickUp / Jira</li>
+          <li>• Понимание REST API / WebSockets</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция: Контакты (id="contacts") -->
+  <section id="contacts" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/5 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+        Давайте обсудим ваши задачи и продукт
+      </h2>
+      <p class="text-slate-400 mb-8 leading-relaxed text-sm sm:text-base">
+        Ищу команду, где смогу применить навыки продуктового исследования, декомпозиции и координации разработки.
+      </p>
+
+      <!-- Оформленная группа кнопок (Email — первый, Telegram, Телефон) -->
+      <div class="flex flex-wrap items-center justify-center gap-3.5">
+        <a href="mailto:aromane1@mail.ru" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium flex items-center gap-2.5 transition shadow-lg shadow-indigo-600/30">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          aromane1@mail.ru
+        </a>
+        <a href="https://t.me/ilem9" target="_blank" class="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 flex items-center gap-2.5 transition">
+          <svg class="w-4 h-4 fill-current text-slate-300" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+          Telegram: @ilem9
+        </a>
+        <a href="tel:+79897271747" class="px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium border border-white/10 flex items-center gap-2.5 transition">
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +7 (989) 727-17-47
+        </a>
+      </div>
+
+      <p class="text-xs text-slate-500 mt-10">
+        Роман Арефьев • Ростов-на-Дону / Remote
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>
